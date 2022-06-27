@@ -19,26 +19,19 @@ header{
     background-color:#EAC926;
     padding: 2em;
 }
-header div.top-header{
+/*Formato del Top-Header*/
+
+header div.top-header{    
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
 }
-div .logo-header{
-    display: flex;
-    flex-wrap: wrap;
-    padding: 5%;
-}
-header div.top-header p{
-    width: 100%;
-    text-align: center;
-    margin-top: 10px;
-    align-self: flex-end;
-}
+
 header div.logo{
+        display: flex;
         width: 50%;
         padding: 10px;
-
 }
 header .form{
     width: 50%;
@@ -47,12 +40,25 @@ header .form{
     padding: 2px;
     font-size: 11px;
 }
+header .phrase{    
+    display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+header div.top-header p{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;}
 
 /*Formato de la barra de navegacion*/
 
 header nav{
-    display: flex;
+    display: none;
     flex-direction: column;
+    
     font-size: 12px;
     margin-left: 20px;
 
@@ -145,7 +151,9 @@ div.offers{
     padding: 1em;
 }
 
-
+main section article{
+    margin-top: 10px;
+}
 main section article img{
     width: 100%;
 }
@@ -203,7 +211,7 @@ footer i{
 }
 footer div .copiyrigth{
     display: flex;
-    text-align: left;
+    text-align: center;
     border-top: solid 1px #ebebeb;
 
 }
@@ -249,6 +257,7 @@ footer div .copiyrigth{
         flex-direction:row;
         border:solid 1px #ebebeb;
     }
+
     /*Desaparece el icono del burger*/
     div.burger-menu{
     display: none;
@@ -257,21 +266,20 @@ footer div .copiyrigth{
     header nav{
         display: flex;
         flex-direction: row;
+        justify-content: space-evenly;
         font-size: 12px;
-        margin-left: 20px;
+        
     }
     
     header nav ul.products-nav{
         display: flex;
         flex-direction: row;
-        list-style-type: none;
         border-bottom: solid 1px #EAC926;
     }
      
     header nav ul.users-nav{
         display: flex;
         flex-direction: row;
-        align-self: flex-end;
         list-style-type: none;
         padding: 5px;
     }
